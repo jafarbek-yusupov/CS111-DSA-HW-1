@@ -90,14 +90,7 @@ Employee* EmpLinkedList::Back() const{
 }
 
 void EmpLinkedList::printList(){ 
-    for(Employee* i=head; i!=nullptr; i=i->next){ 
-        cout 
-        << "employee id: " << i->data.eid << " | " 
-        << "name: " << i->data.name << " | " 
-        << "date of birth: " << i->data.date_of_birth << " | " 
-        << "phone number: " << i->data.phone_number << " | " 
-        << "address: " << i->data.address << ";\n"; 
-    };
+    for(Employee* i=head; i!=nullptr; i=i->next){ i->data.print();};
 };
 
 void EmpLinkedList::addFront(Data d){
